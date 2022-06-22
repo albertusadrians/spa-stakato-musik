@@ -4,7 +4,7 @@
     <v-card class="rounded-xl mx-auto">
       <v-card-title><strong>Ringkasan Belanja</strong></v-card-title>
       <v-toolbar flat>
-        <strong>Subtotal</strong><v-spacer></v-spacer
+        <strong>Total</strong><v-spacer></v-spacer
         ><strong>{{ convertToRupiah(totalPrice) }}</strong>
       </v-toolbar>
       <div v-if="lstCart.length" class="mx-3 mt-2">

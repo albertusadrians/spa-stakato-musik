@@ -1,11 +1,21 @@
 <template>
   <v-app-bar app color="white" flat>
-    <v-badge color="#1d1a56" dot>
-      <v-img src="logo-toko.png" contain width="30"></v-img>
-    </v-badge>
-    <v-toolbar-title class="ml-4" v-on:click="redirectToHome()">
-      <span>Stakato </span><strong>Musik</strong>
-    </v-toolbar-title>
+    <v-card-actions>
+      <v-btn
+        :ripple="false"
+        :elevation="0"
+        v-on:click="redirectToHome()"
+        style="background-color: transparent"
+      >
+        <v-badge color="#1d1a56" dot>
+          <v-img src="logo-toko.png" contain width="30"></v-img>
+        </v-badge>
+        <v-toolbar-title class="ml-4">
+          <span>Stakato </span><strong>Musik</strong>
+        </v-toolbar-title>
+      </v-btn>
+    </v-card-actions>
+
     <v-spacer></v-spacer>
     <v-badge
       color="#1d1a56"

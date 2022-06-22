@@ -36,11 +36,8 @@
           </v-card-title>
 
           <v-card-subtitle
-            >Stok: <strong>{{ product.stock }}</strong>
-          </v-card-subtitle>
-          <v-card-text
             ><strong>{{ convertToRupiah(product.price) }}</strong>
-          </v-card-text>
+          </v-card-subtitle>
 
           <v-card-actions>
             <v-btn v-on:click="addToCart(product)" color="orange" text>
