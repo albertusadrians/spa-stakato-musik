@@ -139,16 +139,16 @@ export default {
         gender: null,
       },
       error: "",
-      nameRules: [(value) => value != "" || "Name masih kosong."],
+      nameRules: [(value) => value != "" || "Nama masih kosong."],
       emailRules: [(value) => value != "" || "Email masih kosong."],
       phoneNumRules: [(value) => value != "" || "Phone number masih kosong."],
       usernameRules: [(value) => value != "" || "Username masih kosong."],
-      genderRules: [(v) => !!v || "Gender masih kosong."],
+      genderRules: [(v) => !!v || "Jenis kelamin masih kosong."],
       passwordRules: [
         (value) => value != "" || "Password masih kosong.",
         (value) =>
           (value.length >= 8 && value.length <= 12) ||
-          "Password must be at least 8-12 characters",
+          "Password harus 8-12 karakter",
       ],
       isValid: false,
       genders: ["Pria", "Wanita"],
