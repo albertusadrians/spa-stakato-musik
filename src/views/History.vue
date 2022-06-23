@@ -25,7 +25,7 @@ export default {
       lstInvoices: [],
     };
   },
-  mounted() {
+  created() {
     db.collection("invoice")
       .where("userId", "==", this.user.id)
       .get()
