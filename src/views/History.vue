@@ -27,7 +27,7 @@ export default {
   },
   mounted() {
     db.collection("invoice")
-      .doc(this.user.id)
+      .where("userId", "==", this.user.id)
       .get()
       .then((querySnapshot) => {
         const documents = querySnapshot.docs.map((doc) => ({
